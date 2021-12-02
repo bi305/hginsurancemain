@@ -1,8 +1,21 @@
 import "antd/dist/antd.css";
-import { Layout, Row, Col, Card, Form, Input, Button, Checkbox } from "antd";
-
+import {
+  Layout,
+  Row,
+  Col,
+  Card,
+  Form,
+  Input,
+  Button,
+  Checkbox,
+  Select,
+  Option,
+} from "antd";
+import FormItem from "antd/lib/form/FormItem";
 const Insurance = () => {
   const { Content } = Layout;
+  const { Option } = Select;
+
   const onFinish = (values) => {
     console.log("Success:", values);
   };
@@ -37,9 +50,17 @@ const Insurance = () => {
                 <Form.Item label="Name" name="name">
                   <Input />
                 </Form.Item>
-
-                <Form.Item label="Type" name="type">
-                  <Input />
+                <Form.Item label="Type">
+                  <Form.Item
+                    name={["type"]}
+                    noStyle
+                    rules={[{ required: true, message: "Type is required" }]}
+                  >
+                    <Select placeholder="Select Type">
+                      <Option value="Business">Business</Option>
+                      <Option value="Agriculture">Agriculture</Option>
+                    </Select>
+                  </Form.Item>
                 </Form.Item>
                 <Form.Item label="Description" name="description">
                   <Input.TextArea />
@@ -78,9 +99,19 @@ const Insurance = () => {
                 <Form.Item label="Name" name="name">
                   <Input />
                 </Form.Item>
-
-                <Form.Item label="Insurance" name="insurance">
-                  <Input />
+                <Form.Item label="Insurance">
+                  <Form.Item
+                    name={["insurance_type"]}
+                    noStyle
+                    rules={[
+                      { required: true, message: "Insurance is required" },
+                    ]}
+                  >
+                    <Select placeholder="Select Insurance">
+                      <Option value="Insurance">Insurance</Option>
+                      <Option value="Expired">Expired</Option>
+                    </Select>
+                  </Form.Item>
                 </Form.Item>
                 <Form.Item label="Description" name="description">
                   <Input.TextArea />
