@@ -95,7 +95,7 @@ const Customer = () => {
       martial_status: "M",
     },
     {
-      id: "3",
+      id: "4",
       name: "Joe Black",
       phone: "+2376532",
       id_card: "840911-4567-658",
@@ -105,7 +105,7 @@ const Customer = () => {
       martial_status: "M",
     },
     {
-      id: "3",
+      id: "5",
       name: "Joe Black",
       phone: "+2376532",
       id_card: "840911-4567-658",
@@ -115,7 +115,7 @@ const Customer = () => {
       martial_status: "M",
     },
     {
-      id: "3",
+      id: "6",
       name: "Joe Black",
       phone: "+2376532",
       id_card: "840911-4567-658",
@@ -125,7 +125,7 @@ const Customer = () => {
       martial_status: "M",
     },
     {
-      id: "3",
+      id: "7",
       name: "Joe Black",
       phone: "+2376532",
       id_card: "840911-4567-658",
@@ -135,7 +135,7 @@ const Customer = () => {
       martial_status: "M",
     },
     {
-      id: "3",
+      id: "8",
       name: "Joe Black",
       phone: "+2376532",
       id_card: "840911-4567-658",
