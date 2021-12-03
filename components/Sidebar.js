@@ -4,8 +4,9 @@ import {
   UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
-  IdcardOutlined,
-  DollarOutlined,
+  InsuranceOutlined,
+  EditOutlined,
+  CheckCircleOutlined,
 } from "@ant-design/icons";
 import Link from "next/link";
 const Sidebar = () => {
@@ -32,16 +33,16 @@ const Sidebar = () => {
           <Menu.Item key="1" icon={<UserOutlined />}>
             <Link href="/Dashboard"> Dashboard </Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+          <Menu.Item key="2" icon={<InsuranceOutlined />}>
             <Link href="/Insurance"> Insurance </Link>
           </Menu.Item>
-          <Menu.Item key="3" icon={<UserOutlined />}>
+          <Menu.Item key="3" icon={<CheckCircleOutlined />}>
             <Link href="/Activations"> Activations </Link>
           </Menu.Item>
           <Menu.Item key="4" icon={<UserOutlined />}>
             <Link href="/Customer"> Customer </Link>
           </Menu.Item>
-          <Menu.Item key="5" icon={<UserOutlined />}>
+          <Menu.Item key="5" icon={<EditOutlined />}>
             <Link href="/EditProfile"> Edit profile </Link>
           </Menu.Item>
         </Menu>
