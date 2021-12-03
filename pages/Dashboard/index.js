@@ -8,7 +8,7 @@ const Dashboard = () => {
     <Content style={{ margin: "24px 16px 0" }}>
       <div
         className="site-layout-background"
-        style={{ padding: 24, minHeight: 360 }}
+        style={{ padding: 24, minHeight: "100vh" }}
       >
         <Row gutter={16}>
           <Col span={8}>
@@ -28,7 +28,7 @@ const Dashboard = () => {
           </Col>
         </Row>
       </div>
-    </Content>
+    </Content >
   );
 };
 
