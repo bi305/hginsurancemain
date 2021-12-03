@@ -23,9 +23,11 @@ const Sidebar = () => {
           console.log(collapsed, type);
         }}
       >
-        <div className="logo">
-          <h1 style={{ color: "white" }}>HG Insurance </h1>
-        </div>
+        <Link href="/">
+          <div className="logo">
+            <h1 style={{ color: "white" }}>HG Insurance </h1>
+          </div>
+        </Link>
         <Menu theme="dark" mode="inline" defaultSelectedKeys={[1]}>
           <Menu.Item key="1" icon={<UserOutlined />}>
             <Link href="/Dashboard"> Dashboard </Link>

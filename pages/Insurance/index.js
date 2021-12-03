@@ -29,13 +29,13 @@ const Insurance = () => {
         className="site-layout-background"
         style={{ padding: 24, minHeight: "100vh" }}
       >
-        <Row gutter={16}>
-          <Col span={8}>
+        <Row gutter={30}>
+          <Col span={12}>
             <Card title="Create Insurances" bordered={false}>
               <Form
                 name="basic"
                 labelCol={{
-                  span: 8,
+                  span: 5,
                 }}
                 wrapperCol={{
                   span: 16,
@@ -68,7 +68,7 @@ const Insurance = () => {
 
                 <Form.Item
                   wrapperCol={{
-                    offset: 8,
+                    offset: 5,
                     span: 16,
                   }}
                 >
@@ -79,12 +79,12 @@ const Insurance = () => {
               </Form>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col span={12}>
             <Card title="Create Types of Insurances" bordered={false}>
               <Form
                 name="basic"
                 labelCol={{
-                  span: 8,
+                  span: 5,
                 }}
                 wrapperCol={{
                   span: 16,
@@ -119,7 +119,7 @@ const Insurance = () => {
 
                 <Form.Item
                   wrapperCol={{
-                    offset: 8,
+                    offset: 5,
                     span: 16,
                   }}
                 >
